@@ -15,7 +15,6 @@ jobs:
       
       - name: Run Trivy (console output)
         uses: aquasecurity/trivy-action@v0.36.0
-        if: always()
         with:
           ignore-unfixed: true
           scan-type: 'fs'
